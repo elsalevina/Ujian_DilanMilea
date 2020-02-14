@@ -55,7 +55,7 @@ for i in range(len(kodepos_provMilea)):
         kodeposMilea = kodepos_provMilea[i]["postal_code"]
 
 # Jarak antara Dilan dan milea
-url_jarak = "https://www.zipcodeapi.com/rest/4so5q9zrJyhfJHCqYpmlZWVZBn5ocQTcQ9wMmtGPZk7nTiFTum5zyKb3JiLcEZPH/distance.json/"
+url_jarak = "https://www.zipcodeapi.com/rest/S6swoDDV3B05dhdN3rIfaZJuqVari8LjRdkJb7J5S6RK27L49hLYrd4z100Jb5dF/distance.json/"
 data_jarak = requests.get(url_jarak+kodeposDilan+'/'+kodeposMilea+'/km')
 
 jarak = data_jarak.json()
